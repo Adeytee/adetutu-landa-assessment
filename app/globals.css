@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -24,4 +24,26 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+#sidebar{
+  background:  #F6F9FD;
+}
+
+#content-wrapper{
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.boxes{
+box-sizing: border-box;
+align-items: center;
+width: 850px;
+height: 110px;
+background: #FAFAFA;
+border: 1px solid #E6E6E6;
+}
+
+.ongoing{
+  border-radius: 10px;
+  box-sizing: border-box;
 }
